@@ -1,0 +1,39 @@
+{
+  "name": "ghst",
+  "version": "1.0.0",
+  "description": "AI-aware pre-push leak protection for developers using Claude and Cursor",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ghst": "dist/index.js"
+  },
+  "scripts": {
+    "build": "esbuild src/*.ts src/**/*.ts --platform=node --target=node18 --outdir=dist --format=esm && node -e \"const fs=require('fs'); const f='dist/index.js'; fs.writeFileSync(f, '#!/usr/bin/env node\\n'+fs.readFileSync(f, 'utf8')); fs.chmodSync(f, 0o755);\"",
+    "dev": "tsx src/index.ts",
+    "test": "node --import=tsx/esm --test src/**/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "security",
+    "git",
+    "leak-detection",
+    "secrets",
+    "pre-push-hook",
+    "claude",
+    "cursor"
+  ],
+  "author": "Sandro",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.20.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

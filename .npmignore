@@ -1,0 +1,11 @@
+src/
+*.test.ts
+tsconfig.json
+esbuild.config.js
+.github/
+_bmad/
+_bmad-output/
+docs/
+*.md
+.gitignore
+.env*
