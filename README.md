@@ -1,5 +1,7 @@
 # ghst
 
+> **📦 Package Moved** — ghst is now published under `@sandrobuilds/ghst`. The old `@sandrosaric/ghst` package is deprecated. See [Migration Guide](#migration-from-old-package) below.
+
 ## 65% of Startups from Forbes AI 50 Leaked Secrets on GitHub
 
 Your code might be leaking more than you think. When you use Claude, Cursor, or Copilot, they leave traces in your project—memories, settings, AI context—that accidentally get pushed to GitHub and expose your secrets.
@@ -42,13 +44,13 @@ Think of it like spell-check for secrets: invisible protection that just works.
 Install ghst globally to your system:
 
 ```bash
-npm install -g ghst
+npm install -g @sandrobuilds/ghst
 ```
 
 Or install locally in a project:
 
 ```bash
-npm install ghst
+npm install @sandrobuilds/ghst
 ```
 
 ### Verify Installation
@@ -409,6 +411,31 @@ We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for:
 ## License
 
 MIT License — see LICENSE file for details.
+
+## Migration from Old Package
+
+### If you're using `@sandrosaric/ghst`
+
+The package has been moved to the `@sandrobuilds` organization. Here's how to upgrade:
+
+1. **Uninstall the old version:**
+   ```bash
+   npm uninstall -g @sandrosaric/ghst
+   # or locally:
+   npm uninstall @sandrosaric/ghst
+   ```
+
+2. **Install the new version:**
+   ```bash
+   npm install -g @sandrobuilds/ghst
+   # or locally:
+   npm install @sandrobuilds/ghst
+   ```
+
+3. **Update your package.json** (if installed locally):
+   - Replace `@sandrosaric/ghst` with `@sandrobuilds/ghst` in your dependencies
+
+The functionality is identical — this is just a package ownership change to better organize our tools under the sandrobuilds organization.
 
 ## Support
 
