@@ -1,8 +1,24 @@
 # ghst
 
-**AI-aware pre-push leak blocker for developers using Claude, Cursor, and Copilot.**
+## 65% of Startups from Forbes AI 50 Leaked Secrets on GitHub
 
-ghst detects sensitive leaks before they reach GitHub—not just traditional credentials (AWS keys, API tokens), but also AI IDE footprints that existing security tools miss (.cursor/ workspace folders, CLAUDE.md agent memories, Copilot cached contexts, AI-generated config mistakes). Install once with `ghst install`, and get automatic pre-push protection on every commit.
+Your code might be leaking more than you think. When you use Claude, Cursor, or Copilot, they leave traces in your project—memories, settings, AI context—that accidentally get pushed to GitHub and expose your secrets.
+
+### What ghst Does
+
+ghst is a simple, automated guardian that runs before you push code. It scans your files for secrets and leaks—not just the obvious ones like AWS keys and API tokens, but also the hidden ones that modern AI tools create. When it finds something risky, it gives you a clear warning and lets you decide what to do.
+
+Think of it like spell-check for secrets: invisible protection that just works.
+
+### Who It's For
+
+- **AI developers** using Claude, Cursor, or Copilot who want to prevent accidental leaks
+- **Teams** that care about security but want something simple to install and forget
+- **Anyone** pushing code to GitHub who doesn't want API keys or passwords exposed
+
+---
+
+**How it works:** Install once with `ghst install`, and get automatic pre-push protection on every commit. ghst detects sensitive leaks before they reach GitHub—not just traditional credentials (AWS keys, API tokens), but also AI IDE footprints that existing security tools miss (.cursor/ workspace folders, CLAUDE.md agent memories, Copilot cached contexts, AI-generated config mistakes).
 
 ## Features
 

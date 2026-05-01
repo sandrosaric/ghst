@@ -1,5 +1,5 @@
 {
-  "name": "ghst",
+  "name": "@sandrosaric/ghst",
   "version": "1.0.0",
   "description": "AI-aware pre-push leak protection for developers using Claude and Cursor",
   "type": "module",
