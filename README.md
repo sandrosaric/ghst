@@ -400,6 +400,12 @@ MIT License — see LICENSE file for details.
 - **Feature Requests** — Open an issue with the `feature-request` label
 - **Security Vulnerabilities** — Please report privately (don't open a public issue)
 
+## Contact
+
+Connect with me on social media:
+- **LinkedIn** — [Sandro Saric](https://www.linkedin.com/in/sandro-saric-4b8b60227/)
+- **Twitter/X** — [@IAmSandroSaric](https://x.com/IAmSandroSaric)
+
 ---
 
 **Questions or feedback?** Open an issue or start a discussion on GitHub. We're here to help make ghst better for the community.
