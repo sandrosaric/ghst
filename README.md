@@ -43,7 +43,7 @@ No configuration. No setup. It just works.
 
 ### See It in Action
 
-![ghst demo — install, push with leaked .cursor/ file, get blocked, unstage, push succeeds](https://imgur.com/WO9LlQu.gif)
+![ghst demo — install, push with leaked .cursor/ file, get blocked, unstage, push succeeds](./assets/0504.mov)
 
 *30-second demo showing automatic leak detection and blocking*
 
